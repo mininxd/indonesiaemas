@@ -36,11 +36,11 @@ setTimeout (function() {
 export function scrambleFooter() {
 var scrambleFoot = document.getElementById("footerScramble");
 
-const acakHuruf = setInterval(acakan, 50);
-function acakan() {
+setInterval( function() {
 gsap.utils.shuffle(abjadTotal);
+var hexText = abjad[abjadTotal[0]] + abjad[abjadTotal[1]] + abjad[abjadTotal[2]] + abjad[abjadTotal[3]] + abjad[abjadTotal[4]] + abjad[abjadTotal[5]];
 //console.log(abjad[abjadTotal[0]]);
-scrambleFoot.style.color = "#"+ abjad[abjadTotal[0]] + abjad[abjadTotal[1]] + abjad[abjadTotal[2]] + abjad[abjadTotal[3]] + abjad[abjadTotal[4]] + abjad[abjadTotal[5]] ;
-scrambleFoot.innerHTML = "#" + abjad[abjadTotal[0]] + abjad[abjadTotal[1]] + abjad[abjadTotal[2]] + abjad[abjadTotal[3]] + abjad[abjadTotal[4]] + abjad[abjadTotal[5]] ;
-}
+scrambleFoot.style.color = "#" + hexText;
+scrambleFoot.innerHTML = "#" + hexText;
+},50);
 }
