@@ -19,6 +19,7 @@ body, video {
     justify-content: center;
 }
 #titleEl, #scrambleTitleEl, #footerScramble {
+transition: 0.2s;
  color: #fff;
   padding: 1em;
   display: flex;
@@ -33,9 +34,18 @@ body, video {
 }
 #footerScramble {
   position: absolute;
-  opacity: 0.2;
+  opacity: 0.3;
   right: 0;
   bottom: 0;
+}
+#footerScramble2 {
+  position: absolute;
+ font-size: 200px;
+ opacity: 0.1;
+ color: #fff;
+ left: 0;
+ bottom: 0;
+ transform: translateY(10px);
 }
 .background-clip{
     position: absolute;

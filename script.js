@@ -33,8 +33,9 @@ setTimeout (function() {
 }
 
 
-export function scrambleFooter() {
+export function scrambleInfinite() {
 var scrambleFoot = document.getElementById("footerScramble");
+var scrambleFoot2 = document.getElementById("footerScramble2");
 
 setInterval( function() {
 gsap.utils.shuffle(abjadTotal);
@@ -42,5 +43,7 @@ var hexText = abjad[abjadTotal[0]] + abjad[abjadTotal[1]] + abjad[abjadTotal[2]]
 //console.log(abjad[abjadTotal[0]]);
 scrambleFoot.style.color = "#" + hexText;
 scrambleFoot.innerHTML = "#" + hexText;
+scrambleFoot2.innerHTML = "#" + hexText;
+titleEl.style.filter = "drop-shadow(0px 0px 3px #" + hexText + ")"
 },50);
 }

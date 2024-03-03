@@ -35,19 +35,21 @@
         <img src="https://jasalogocepat.com/wp-content/uploads/2023/09/logo-bumn-tanpa-background-1-jasalogocepat-768x253.png">
     </div>    
       
-            <span id="titleEl">
-            </span>
+            <div id="title">
+              <h1 id='titleEl'></h1>
+            </div>
               <span id="scrambleTitleEl"></span>
             
             
             
         </div>
         <div id="footerScramble"></div>
+        <div id="footerScramble2"></div>
     </div>    
     
     
     <script type="module">
-    import {gsapEl, scrambleTitle, scrambleFooter} from './script.js';
+    import {gsapEl, scrambleTitle, scrambleInfinite} from './script.js';
     var audioEl = new Audio('./assets/wait.mp3');
     audioEl.play(); 
     
@@ -62,9 +64,10 @@
     content.style.opacity = "1";
     content.style.userSelect = "all";
     gsapEl();
-    scrambleFooter();
+    scrambleInfinite();
     scrambleTitle();
-    }, 24700);
+    }, 24799);
+    //24700
     </script>
 </body>
 </html>
